@@ -1,9 +1,21 @@
 import random
 import math
+from re import S
+
 
 def play():
-    user = input("What's your choice? 'R' for rock, 'P' for paper, 'S' for scissors\n")
-    user = user.upper()
+    is_running = True
+    while is_running:
+
+        user = input("What's your choice? 'R' for rock, 'P' for paper, 'S' for scissors\n")
+        rock_paper_scissors = ["R", "P", "S"]
+        user = user.upper()
+        
+        if user in rock_paper_scissors:
+            True
+            break
+        else:
+            print("error...")
 
     computer = random.choice(['R', 'P', 'S'])
 
